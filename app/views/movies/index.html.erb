@@ -1,0 +1,35 @@
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">왓챠!</h1>
+      <p class="lead text-muted">영화 평점 사이트 왓챠</p>
+      <p>
+        <%= link_to "게시판", posts_path, class: "btn btn-primary" %>
+        <%= link_to "영화 추가하기", new_movie_path, class: "btn btn-secondary" if check_admin %>
+      </p>
+    </div>
+  </section>
+
+  <div class="album text-muted">
+    <div class="container">
+
+      <div class="row">
+        <% @movies.each do |movie| %>
+        <div class="card">
+          <a href="/movies/show/<%= movie.id %>">
+          <img height="280px" src="<%= movie.poster %>" alt="Card image cap">
+          <p class="card-title">평점 : <%= movie.average == 0 ? "리뷰가 없어영 ㅠ" : movie.average %></p>
+          <!-- 트루일때는 앞에꺼 거짓일때는 뒤에꺼 -->
+          <p class="card-text">
+          <div><%= movie.title %></div>
+          </p>
+        </a>
+        </div>
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+
+</main>
