@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
       nation: params[:nation],
       director: params[:director]
     )
-    # redirect_to '/'
+    # redirect_to '/' 
     redirect_to root_path
   end
 

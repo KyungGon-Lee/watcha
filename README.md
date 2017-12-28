@@ -47,7 +47,7 @@ fake 왓챠 based on rails
  protected
  def configure_permitted_parameters
    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
- end
+ end 
 
 ## 4. 사진 업로드
 
