@@ -1,5 +1,9 @@
 require File.expand_path('../boot', __FILE__)
+<<<<<<< HEAD
 require 'devise'
+=======
+
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems

@@ -17,7 +17,10 @@ list.each do |movie|
   Movie.create(
   title: movie["items"][0]["item"]["title"],
   poster: movie["items"][0]["item"]["poster"]["original"],
+<<<<<<< HEAD
   remote_poster_url: movie["items"][0]["item"]["poster"]["original"], # 캐리어웨이브가 방해하지 못하게 막음 앞에리모트 뒤에 url
+=======
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
   genre: movie["items"][0]["item"]["main_genre"],
   nation: movie["items"][0]["item"]["nation"],
   director: movie["items"][0]["item"]["directors"][0]["name"]
@@ -25,6 +28,7 @@ list.each do |movie|
 end
 
 
+<<<<<<< HEAD
   User.create(
     email: "admin@admin.com",
     password: "123123",
@@ -48,6 +52,8 @@ end
     nickname: "유저"
   )
 
+=======
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 #Rails.root.to_s
 
 # Movie.create(

@@ -1,8 +1,14 @@
 class Movie < ActiveRecord::Base
+<<<<<<< HEAD
   # has_many :movies
   has_many :reviews
 
   mount_uploader :poster, PhotoUploader
+=======
+  has_many :movies
+  has_many :reviews
+
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
   def number
     self.reviews.count
   end

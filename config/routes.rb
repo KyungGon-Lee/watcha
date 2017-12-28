@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   # namespace :admin do
   #   get '/users/index' => 'users#index'
   # end
+=======
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 
   resources :movies do
     member do
@@ -11,6 +14,7 @@ Rails.application.routes.draw do
   end
   # post '/movies/:id/review' => 'movies#review' #위에 구문과 같음
 
+<<<<<<< HEAD
   post '/posts/:id/comments' => 'posts#comments'
 
   get '/admin/index'
@@ -24,6 +28,8 @@ Rails.application.routes.draw do
   put '/admin/reviews_destroy/:id' => 'admin#reviews_destroy'
   delete '/admin/posts_destroy/:id' => 'admin#posts_destroy'
 
+=======
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 
   resources :posts
   devise_for :users
@@ -34,10 +40,13 @@ Rails.application.routes.draw do
 
   get 'movies' => 'movies#index'
 
+<<<<<<< HEAD
   get 'home/index' => 'home#index'
 
 
 
+=======
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

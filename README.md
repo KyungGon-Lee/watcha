@@ -47,6 +47,7 @@ fake 왓챠 based on rails
  protected
  def configure_permitted_parameters
    devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
+<<<<<<< HEAD
  end 
 
 ## 4. 사진 업로드
@@ -56,3 +57,6 @@ fake 왓챠 based on rails
 - role = ["user", "manager", "admin"] (유저는 3개의 역할군으로 나눠져 있다.)
 -
 ## 배포할 땐 sqlite3 빼고 pg로 해야함
+=======
+ end
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5

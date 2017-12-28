@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+<<<<<<< HEAD
 gem 'devise'
 gem 'rails_db'
 gem 'awesome_print'
@@ -9,11 +10,18 @@ gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
 gem 'sqlite3' # pg 할땐 뺴야됨
 gem 'pg'
+=======
+
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.9'
 # Use sqlite3 as the database for Active Record
+<<<<<<< HEAD
 
+=======
+gem 'sqlite3'
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -52,4 +60,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+<<<<<<< HEAD
+=======
+  gem 'devise'
+  gem 'rails_db'
+  gem 'awesome_print'
+  gem 'pry-rails'
+  gem 'meta_request'
+  gem 'devise-i18n'
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
 end

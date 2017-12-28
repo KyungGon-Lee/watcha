@@ -5,7 +5,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def check_admin
+<<<<<<< HEAD
     user_signed_in? && current_user.role == "admin"
+=======
+    user_signed_in? && current_user.is_admin?
+>>>>>>> d776ad36555d0bcbb98e84e500a8907a61ae41d5
   end
 
   def get_out
