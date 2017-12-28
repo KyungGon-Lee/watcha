@@ -1,8 +1,6 @@
-<br><br><br>
-<h1>관리자 페이지 입니다</h1>
-<!-- 여기를 감싸고있는 admin레이아웃을 먼저 찾음 -->
 
     <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+      <h1>관리자 페이지 입니다</h1>
       <h2>리뷰 현황</h2>
       <div class="table-responsive">
         <table class="table table-striped">
@@ -19,7 +17,7 @@
           </thead>
 
           <tbody>
-
+            
             <% @reviews.each do |review| %>
             <tr>
             <td><%= review.id %></td>

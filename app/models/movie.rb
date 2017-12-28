@@ -2,7 +2,7 @@ class Movie < ActiveRecord::Base
   # has_many :movies
   has_many :reviews
 
-  # mount_uploader :poster, PhotoUploader
+  mount_uploader :poster, PhotoUploader
   def number
     self.reviews.count
   end

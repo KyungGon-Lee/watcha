@@ -1,37 +1,31 @@
-<br><br><br>
+
+<main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
 <h1>관리자 페이지 입니다</h1>
 <!-- 여기를 감싸고있는 admin레이아웃을 먼저 찾음 -->
-    <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
-      <h2>유저 현황</h2>
-      <div class="table-responsive">
-        <table class="table table-striped">
+  <h2>유저 현황</h2>
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>이메일</th>
+          <th>닉네임</th>
+          <th>역할</th>
+          <th>역할 변경</th>
+        </tr>
+      </thead>
 
-          <thead>
-            <tr>
-              <th>이메일</th>
-              <th>닉네임</th>
-              <th>역할</th>
-              <th>역할 변경</th>
-            </tr>
-          </thead>
+      <tbody>
+        <% @users.each do |user| %>
+        <tr>
+        <td><%= user.email %></td>
+        <td><%= user.nickname%></td>
+        <td><%= user.role%></td>
+        <td><%= link_to "[매니저로]", "/admin/to_manager/#{user.id}",class: "btn btn-primary btn-lg", method: :put, data: {confirm: "매니저로 하시겠습니까?"} %></td>
+        <td><%= link_to "[양민으로]", "/admin/to_user/#{user.id}",class: "btn btn-primary btn-lg",  method: :put, data: {confirm: "양민으로 하시겠습니까?"}  %></td>
+        </tr>
+        <% end %>
 
-          <tbody>
-
-            <% @users.each do |user| %>
-            <tr>
-            <td><%= user.email %></td>
-            <td><%= user.nickname%></td>
-            <td><%= user.role%></td>
-            <td><%= link_to "[매니저로]", "/admin/to_manager/#{user.id}",class: "btn btn-primary btn-lg", method: :put, data: {confirm: "매니저로 하시겠습니까?"} %></td>
-            <td><%= link_to "[양민으로]", "/admin/to_user/#{user.id}",class: "btn btn-primary btn-lg",  method: :put, data: {confirm: "양민으로 하시겠습니까?"}  %></td>
-            </tr>
-            <% end %>
-
-          </tbody>
-        </table>
-      </div>
-    </main>
-
-
-</body>
-</html>
+      </tbody>
+    </table>
+  </div>
+</main>

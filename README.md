@@ -54,4 +54,5 @@ fake 왓챠 based on rails
 ## 5. 유저 역할 구분 / 관리자 페이지
 - User model -> :role, :string, default: "user"
 - role = ["user", "manager", "admin"] (유저는 3개의 역할군으로 나눠져 있다.)
-- 로그인 안 된 유저 : R
+-
+## 배포할 땐 sqlite3 빼고 pg로 해야함

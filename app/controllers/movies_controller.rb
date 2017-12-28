@@ -43,8 +43,6 @@ class MoviesController < ApplicationController
     redirect_to :back
   end
 
-  def privacy
-    
-  end
+
 
 end

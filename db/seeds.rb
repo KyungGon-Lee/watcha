@@ -17,6 +17,7 @@ list.each do |movie|
   Movie.create(
   title: movie["items"][0]["item"]["title"],
   poster: movie["items"][0]["item"]["poster"]["original"],
+  remote_poster_url: movie["items"][0]["item"]["poster"]["original"], # 캐리어웨이브가 방해하지 못하게 막음 앞에리모트 뒤에 url
   genre: movie["items"][0]["item"]["main_genre"],
   nation: movie["items"][0]["item"]["nation"],
   director: movie["items"][0]["item"]["directors"][0]["name"]
